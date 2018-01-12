@@ -66,7 +66,10 @@ public class InterestPointsServiceT {
     public void findProximityPointsTest() {
 
         List<String> points = interestPointsService.findProximityPoints(20l, 10l, 10l);
-        assertThat(points).isNotNull();
+        assertThat(points).isNotEmpty();
+        assertThat(points.size()).isEqualTo(2);
+        assertThat(points.get(0)).isEqualToIgnoringCase("Lanchonete");
+        assertThat(points.get(1)).isEqualToIgnoringCase("Padaria");
     }
 
 }
