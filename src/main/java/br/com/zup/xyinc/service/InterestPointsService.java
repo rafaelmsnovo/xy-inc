@@ -3,10 +3,12 @@ package br.com.zup.xyinc.service;
 import br.com.zup.xyinc.entity.InterestPointsEntity;
 import br.com.zup.xyinc.repository.InterestPointsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class InterestPointsService {
 
     @Autowired
@@ -26,7 +28,6 @@ public class InterestPointsService {
     private Double calculateDistance(Long xA, Long yA, Long xB, Long yB) {
         Double dX = Math.pow(xB - xA, 2);
         Double dY = Math.pow(yB - yA, 2);
-        Double distance = Math.sqrt(dX + dY);
-        return distance;
+        return Math.sqrt(dX + dY);
     }
 }
