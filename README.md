@@ -14,9 +14,9 @@ Para iniciar
 > java -jar target/xy-inc.jar
 
 
-####Api
+#### Api
 
-#####Busca pontos próximos, utilize POST
+##### Busca pontos próximos, utilize POST
 
 > http://localhost:8080/xy-inc/nearPoints (POST)
 
@@ -39,7 +39,7 @@ Response:
 ```
 
 
-#####Busca todos os pontos, paginada utilize os parametros(?page,size,sort})
+##### Busca todos os pontos, paginada utilize os parametros(?page,size,sort})
 
 > http://localhost:8080/xy-inc/interestPointsEntities (GET)
 
@@ -80,7 +80,7 @@ Response:
   }
 ```
 
-#####Adicionar pontos, utilize POST
+##### Adicionar pontos, utilize POST
 
 > http://localhost:8080/xy-inc/interestPointsEntities (POST)
 
@@ -110,12 +110,12 @@ Response:
 ```
 
 
-#####Remover pontos, utilize DELETE e passe o ID
+##### Remover pontos, utilize DELETE e passe o ID
 
 > http://localhost:8080/xy-inc/interestPointsEntities/{id} (DELETE)
 
 
-#####Atualizar pontos, utilize PATCH ou PUT
+##### Atualizar pontos, utilize PATCH ou PUT
 
 > http://localhost:8080/xy-inc/interestPointsEntities/{id} (PATCH, PUT)
 
@@ -150,7 +150,7 @@ Response:
 ```
 
 
-####UTIL
+#### UTIL
 
 {
 	"name": "Lanchonete",
